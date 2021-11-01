@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<imageLists>
+  <imageList>
+    <codeNumber>1</codeNumber>
+	<titleName>빅뱅</titleName>
+	<imageName>picture1.jpg</imageName>
+  </imageList>
+  <imageList>
+    <codeNumber>2</codeNumber>
+	<titleName>태고의 우주</titleName>
+	<imageName>picture2.jpg</imageName>
+  </imageList>
+  <imageList>
+    <codeNumber>3</codeNumber>
+	<titleName>벤치마킹</titleName>
+	<imageName>picture3.jpg</imageName>
+  </imageList>
+  <imageList>
+    <codeNumber>4</codeNumber>
+	<titleName>8월</titleName>
+	<imageName>picture4.jpg</imageName>
+  </imageList>
+</imageLists>

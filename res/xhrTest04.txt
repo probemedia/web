@@ -1,0 +1,6 @@
+{
+"members":[
+  {"memberNumber" : "m001", "irum" : "goroman", "picture" : "goroman.jpg"},
+  {"memberNumber" : "m002", "irum" : "kingkang", "picture" : "myFace.jpg"}
+]
+}
