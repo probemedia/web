@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>jquery test</title>
+<style id="jsbin-css">
+  div{
+    margin : 10px;
+    padding: 10px;
+  }
+
+  div#picArea{
+	width : 500px;
+	height: 120px;
+    background-image: url(https://github.com/probemedia/web/blob/master/images/bluepaper.png?raw=true);
+  }
+
+  img{
+	margin : 10px;
+	width : 90px;
+	height : 80px;
+	border : 2px solid black;
+  }
+
+  .c1{
+	border-radius: 50%;
+  }
+
+  .c2{
+	box-shadow: 10px 10px 5px #888888;
+  }
+</style>
+</head>
+<body>
+  <div id="picArea">
+    <img class="c1" src="https://github.com/probemedia/web/blob/master/images/picture1.png?raw=true
+">
+    <img class="c2" src="https://github.com/probemedia/web/blob/master/images/picture2.png?raw=true
+">
+    <img class="c1" src="https://github.com/probemedia/web/blob/master/images/picture3.png?raw=true
+">
+    <img class="c2" src="https://github.com/probemedia/web/blob/master/images/picture4.png?raw=true
+">
+  </div>
+  <div id="btnArea">
+    <button id="b1">id="pic1"인 이미지 숨기기</button>
+    <button id="b2">class="c1"인 이미지 숨기기</button>
+    <button id="b3">모든 이미지 숨기기</button><br>
+    <button id="b4">숨기기 취소</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script>
+    $(document).ready(function(){
+		$("#b1").click(function(){//[id="pic1"인 이미지 숨기기]버튼 클릭
+			$("#pic1").hide();
+		});
+		
+		$("#b2").click(function(){//[class="c1"인 이미지 숨기기]버튼 클릭
+			$(".c1").hide();
+		});
+		
+	    $("#b3").click(function(){//[모든 이미지 숨기기]버튼 클릭
+	    	$("img").hide();
+		});
+	    
+	    $("#b4").click(function(){//[숨기기 취소]버튼 클릭
+	    	$("img").show();
+		});
+	});
+  </script>
+</body>
+</html>

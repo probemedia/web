@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>jquery test</title>
+<style>
+  div{
+    width  : 400px;
+    height : 200px;
+    border : 5px double #6699FF;
+  }
+  ul li{
+    list-style:none; 
+  }
+</style>
+
+</head>
+<body>
+  <div id="status">
+     <ul>
+        <li><label for="id">아이디</label>
+            <input id="id" name="id" type="email" size="20" 
+              maxlength="50" placeholder="example@kings.com">
+        <li><label for="passwd">비밀번호</label>
+            <input id="passwd" name="passwd" type="password" 
+              size="20" placeholder="6~16자 숫자/문자" maxlength="16">
+        <li class="label2">
+            <button id="login">로그인</button>
+     </ul>
+  </div>
+  <div id="result"></div>
+  
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script>
+    $(document).ready(function(){		
+		$("#login").click(function(){
+		   var query = {id : $("#id").val(),
+				   passwd:$("#passwd").val()};
+		   $("#result").text(query.id + ", " + query.passwd);
+		   $("#id").val("");
+		   passwd:$("#passwd").val("");
+		});
+    });
+		 
+  </script>
+</body>
+</html>
