@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>jquery test</title>
+<style>
+
+</style>
+
+</head>
+<body>
+  <button id="pro">결과</button>
+  <div id="result"></div>
+  
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script>
+  $(document).ready(function(){
+		//[결과]버튼을 클릭하면 jq02.html페이지가 실행된다.
+		$("#pro").click(function(){
+		   $("#result").load("https://raw.githubusercontent.com/probemedia/web/master/res/ajax_06_02.html");
+		});
+	});
+		 
+  </script>
+</body>
+</html>
