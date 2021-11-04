@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>jquery test</title>
+<style>
+body{
+  background-color: white ;
+} 
+div{
+
+}
+
+#header{
+  width : 100%;
+  height : 100px;
+  background-color: yellow;
+}
+#nav{/*네비게이션바 - 너비, 높이, 배경색*/
+   width : 100%;
+   height : 50%;
+   background-color : #c0c0c0;
+}
+#content{
+  width : 100%;
+  height : 300px;
+  background-color: pink;
+}
+
+#footer{
+  width : 100%;
+  height : 100px;
+  background-color : #c0c0c0;
+}
+
+ul{/*<ul>태그에 적용*/
+   /*블릿기호 제거*/
+   list-style-type : none; 
+   padding : 5px;
+}
+
+ul li{/*<ul><li>태그에 적용*/
+   /*목록을 왼쪽에서 오른쪽으로 배치: 수평배치*/
+   display : inline;
+   margin : 5px;
+}
+
+ul li a{/*<ul><li><a>태그에 적용*/
+   /*글자색-검정, 밑줄제거*/
+   color : black; /*글자색-검정*/
+   text-decoration : none; /*밑줄제거*/
+}
+
+  ul li a:hover{/*<ul><li><a>태그에 마우스포인터가 위치하면*/
+   color : white; 
+</style>
+
+</head>
+<body>
+  <div id="page">
+    <header id="header">
+      <p>헤더영역</p>
+      <div id="nav">
+        <ul>
+          <li><a id="a1" href="#">회사소개</a>
+          <li><a id="a2" href="#">비전소개</a>
+        </ul>
+      </div>
+    </header>
+    <section id="content">내용영역</section>
+ 
+    <footer id="footer">찾아오시는길</footer>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script>
+  $(document).ready(function(){
+		//[결과]버튼을 클릭하면 jq02.html페이지가 실행된다.
+    $("#a1").click(function(){
+	  $("#content").load("https://raw.githubusercontent.com/probemedia/web/master/res/intro_01.txt");
+    });
+    $("#a2").click(function(){
+	  $("#content").load("https://raw.githubusercontent.com/probemedia/web/master/res/intro_02.txt");
+    });
+  });
+		 
+  </script>
+</body>
+</html>
