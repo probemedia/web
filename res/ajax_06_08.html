@@ -46,14 +46,19 @@ ul li{/*<ul><li>태그에 적용*/
    margin : 5px;
 }
 
+ul li:hover{
+  background-color : black;
+}
+
 ul li a{/*<ul><li><a>태그에 적용*/
    /*글자색-검정, 밑줄제거*/
    color : black; /*글자색-검정*/
    text-decoration : none; /*밑줄제거*/
 }
 
-  ul li a:hover{/*<ul><li><a>태그에 마우스포인터가 위치하면*/
-   color : white; 
+ul li a:hover{/*<ul><li><a>태그에 마우스포인터가 위치하면*/
+   color : white;
+}
 </style>
 
 </head>
@@ -76,7 +81,6 @@ ul li a{/*<ul><li><a>태그에 적용*/
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>
   $(document).ready(function(){
-		//[결과]버튼을 클릭하면 jq02.html페이지가 실행된다.
     $("#a1").click(function(){
 	  $("#content").load("https://raw.githubusercontent.com/probemedia/web/master/res/intro_01.txt");
     });
