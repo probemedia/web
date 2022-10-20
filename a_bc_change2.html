@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/jupivevojo/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body{
+  background-color: white ;
+} 
+div{
+
+}
+
+#header{
+  width : 100%;
+  height : 6.25rem;
+  background-color: yellow;
+}
+#nav{/*네비게이션바 - 너비, 높이, 배경색*/
+   width : 100%;
+   height : 3rem;
+   background-color : #c0c0c0;
+}
+#content{
+  width : 100%;
+  height : 300px;
+  background-color: pink;
+}
+
+#footer{
+  width : 100%;
+  height : 100px;
+  background-color : #c0c0c0;
+}
+
+ul{/*<ul>태그에 적용*/
+   /*블릿기호 제거*/
+   list-style-type : none; 
+   padding : 0px;
+}
+
+ul li{/*<ul><li>태그에 적용*/
+   /*목록을 왼쪽에서 오른쪽으로 배치: 수평배치*/
+   display : inline;
+   margin : 5px;
+}
+
+
+ul li a{/*<ul><li><a>태그에 적용*/
+   display: table-cell;
+   width: 100px;
+   height: 3rem;
+   color : black; /*글자색-검정*/
+   text-decoration : none; /*밑줄제거*/
+   background-color: red;
+   text-align: center;
+   vertical-align: middle;
+}
+
+ul li a:hover{/*<ul><li><a>태그에 마우스포인터가 위치하면*/
+  color : white;
+  background-color : black;
+}
+
+
+</style>
+</head>
+<body>
+  <div id="page">
+    <header id="header">
+      <p>헤더영역</p>
+      <div id="nav">
+        <ul>
+          <li><a id="a1" href="#">회사소개</a>
+          <li><a id="a2" href="#">비전소개</a>
+        </ul>
+      </div>
+    </header>
+    <section id="content">내용영역</section>
+ 
+    <footer id="footer">찾아오시는길</footer>
+  </div>
+</body>
+</html>
